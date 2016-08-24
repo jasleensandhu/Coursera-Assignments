@@ -1,7 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Dating Web Site Assessment</title>
+		<title> Dating Web Site Assessment</title>
+		<style>
+			fieldset{background:LightYellow; border:10px solid yellow; margin-bottom:10px; width:720px  }
+			label{width:180px; display:inline-block;text-align:right;text-align:top}
+			textarea{width:360px;height:50px;}
+			#left{background:maroon;color:white;text-align:center}
+			#right{background:purple;color:white;text-align:center}
+			<!--radio{width:auto}
+			#checkbox{width:auto}-->
+			div{width:auto}
+			
+		</style>
 	</head>
 	<body>
 		<h1> Please Enter Your Details For Our Dating Website!</h1>
@@ -18,10 +29,12 @@
 				<label for="name">Name:</label>
 				<input type="text" name="name" id="name" placeholder="Your Full Name" required>
 				<br>
-				<label for="gender">Gender:</label>
+				<div>
+				<label for="gender" id="gender" >Gender:</label>
 				<input type="radio" id="gender" name="gender" required>Male
 				<input type="radio" id="gender" name="gender" >Female
-				<br>
+				</div>
+			
 				<label for="age">Age:</label>
 				<input type="number" min="0" max="99" value="18" id="age" name="age" required>
 				<br>
@@ -45,10 +58,10 @@
 			<fieldset >
 				<legend> Your Indicators </legend>
 				<label for="height">Height:</label>
-				Short<input type="range" min="0" max="100" value="50" id="height" name="height" >Tall
+				<span id="left">Short</span><input type="range" min="0" max="100" value="50" id="height" name="height" ><span id="right">Tall</span>
 				<br>
 				<label for="salary">Salary:</label>
-				Poor<input type="range" min="0" max="100" value="50" id="salary" name="salary">Rich
+				<span id="left">Poor</span><input type="range" min="0" max="100" value="50" id="salary" name="salary"><span id="right">Rich</span>
 			</fieldset>
 			
 			<fieldset>
@@ -59,13 +72,15 @@
 				<label for="mobile">Mobile:</label>
 				<input type="tel" id="mobile" name="mobile">
 				<br>
-				<label for="address">Address:</label>
-				<textarea rows="3" cols="50" name="address" id="address"></textarea>
+				<label for="address" >Address:</label>
+				<textarea  name="address" id="address"></textarea>
 				<br>
-				<label for="contact">Method to contact you:</label>
+				<div>
+				<label for="contact"  >Method to contact you:</label>
 				<input type="checkbox" id ="contact" name="contact">Email
 				<input type="checkbox" id ="Whatsapp" name="Whatsapp">Whatsapp
 				<input type="checkbox" id ="inAppChat" name="inAppChat">In-app chat
+				</div>
 			</fieldset>
 			<input type="submit" value="Submit">
 		</form>

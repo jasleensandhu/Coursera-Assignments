@@ -4,12 +4,13 @@
 		<title> Dating Web Site Assessment</title>
 		<style>
 			fieldset{background:LightYellow; border:10px solid yellow; margin-bottom:10px; width:720px  }
-			label{width:180px; display:inline-block;text-align:right;text-align:top}
+			label{width:180px; display:inline-block;text-align:right;text-align:top;}
+			label:hover { font-size:30px }
+			input:hover { font-size:30px }
+			select:hover { font-size:30px }
 			textarea{width:360px;height:50px;}
 			#left{background:maroon;color:white;text-align:center}
 			#right{background:purple;color:white;text-align:center}
-			<!--radio{width:auto}
-			#checkbox{width:auto}-->
 			div{width:auto}
 			
 		</style>
@@ -29,12 +30,10 @@
 				<label for="name">Name:</label>
 				<input type="text" name="name" id="name" placeholder="Your Full Name" required>
 				<br>
-				<div>
-				<label for="gender" id="gender" >Gender:</label>
+				<label for="gender" >Gender:</label>
 				<input type="radio" id="gender" name="gender" required>Male
 				<input type="radio" id="gender" name="gender" >Female
-				</div>
-			
+				<br>
 				<label for="age">Age:</label>
 				<input type="number" min="0" max="99" value="18" id="age" name="age" required>
 				<br>
@@ -72,17 +71,16 @@
 				<label for="mobile">Mobile:</label>
 				<input type="tel" id="mobile" name="mobile">
 				<br>
-				<label for="address" >Address:</label>
+				<label for="address">Address:</label>
 				<textarea  name="address" id="address"></textarea>
 				<br>
-				<div>
-				<label for="contact"  >Method to contact you:</label>
+				<label for="contact" >Method to contact you:</label>
 				<input type="checkbox" id ="contact" name="contact">Email
 				<input type="checkbox" id ="Whatsapp" name="Whatsapp">Whatsapp
 				<input type="checkbox" id ="inAppChat" name="inAppChat">In-app chat
-				</div>
 			</fieldset>
 			<input type="submit" value="Submit">
 		</form>
+		<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
 	</body>
 </html>
